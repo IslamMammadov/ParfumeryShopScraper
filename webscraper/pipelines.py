@@ -52,8 +52,8 @@ class SavetoSQLitePipeline:
                               volume integer,
                               url text)
                             """
-        drop_table = """DROP TABLE IF EXISTS parfume"""
-        self.cur.execute(drop_table)
+        #drop_table = """DROP TABLE IF EXISTS parfume"""
+        #self.cur.execute(drop_table)
         self.cur.execute(create_table)
 
     def process_item(self, item, spider):
